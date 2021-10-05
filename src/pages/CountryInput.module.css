@@ -1,0 +1,110 @@
+.countries-container {
+  padding: 2.4rem 4.8rem;
+  padding-top: 0;
+  min-height: 100vh;
+  background-color: #eee;
+  position: relative;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6rem 0;
+}
+
+.input-field {
+  width: 38%;
+  position: relative;
+}
+
+.search-icon {
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  color: #777;
+}
+
+.input-field input {
+  width: 100%;
+  padding: 2rem 6.4rem;
+  outline: none;
+  border: none;
+  font-size: 1.6rem;
+  color: #111;
+  border-radius: 7px;
+  box-shadow: 0 0px 10px rgb(0 0 0 / 5%);
+}
+
+.select-field {
+  position: relative;
+  width: 20rem;
+}
+
+.arrow-icon {
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+.select-field select {
+  width: 100%;
+  padding: 2rem 2.4rem;
+  border: none;
+  background-color: #fff;
+  border-radius: 7px;
+  font-size: 1.6rem;
+  outline: none;
+  color: #666;
+  font-weight: 400;
+  -webkit-appearance: none;
+  box-shadow: 0 0px 10px rgb(0 0 0 / 5%);
+  cursor: pointer;
+}
+
+/* 1220px */
+@media only screen and (max-width: 76em) {
+  .input-field {
+    width: 48%;
+  }
+}
+
+/* 600px */
+@media only screen and (max-width: 76em) {
+  .input-field {
+    width: 50%;
+  }
+}
+
+/* 544px */
+@media only screen and (max-width: 34em) {
+  .countries-container {
+    padding: 2.4rem 4rem;
+  }
+
+  .input-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.4rem;
+    padding: 3.2rem 0;
+  }
+
+  .input-field {
+    width: 100%;
+  }
+
+  .input-field input {
+    font-size: 1.9rem;
+  }
+
+  .select-field select {
+    font-size: 1.8rem;
+  }
+}

@@ -1,0 +1,42 @@
+.countries {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5.6rem;
+}
+
+.countries a:link,
+.countries a:visited {
+  text-decoration: none;
+  color: #111;
+}
+
+/* 1344px
+@media only screen and (max-width: 84em) {
+  .countries {
+    grid-gap: 4.2rem;
+  }
+} */
+
+/* 1024px */
+@media only screen and (max-width: 64em) {
+  .countries {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 4rem;
+  }
+}
+
+/* 704px */
+@media only screen and (max-width: 44em) {
+  .countries {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5rem;
+  }
+}
+
+/* 544px */
+@media only screen and (max-width: 34em) {
+  .countries {
+    grid-template-columns: 1fr;
+    grid-gap: 6rem;
+  }
+}

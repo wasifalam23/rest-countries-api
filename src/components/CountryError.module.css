@@ -1,0 +1,17 @@
+.text {
+  position: absolute;
+  font-size: 1.8rem;
+  top: 2rem;
+  left: 5%;
+
+  color: #e91e1e;
+  font-weight: 700;
+}
+
+/* 544px */
+@media only screen and (max-width: 34em) {
+  .text {
+    left: 2rem;
+    font-weight: 400;
+  }
+}

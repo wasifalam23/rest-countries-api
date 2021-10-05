@@ -1,0 +1,9 @@
+.message {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #333;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+}
