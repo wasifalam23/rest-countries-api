@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch, Redirect } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import Header from './components/Header';
 import './App.css';
 import CountryInput from './pages/CountryInput';
@@ -13,14 +13,10 @@ function App() {
       <main>
         <Switch>
           <Route path="/" exact>
-            <Redirect to="/countries" />
-          </Route>
-
-          <Route path="/countries" exact>
             <CountryInput />
           </Route>
 
-          <Route path="/countries/:id" exact>
+          <Route path="/:id" exact>
             <CountryDetails />
           </Route>
         </Switch>

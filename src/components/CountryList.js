@@ -8,7 +8,7 @@ const CountryList = (props) => {
   return (
     <div className={styles.countries}>
       {props.countries.map((country) => (
-        <Link key={country.numericCode} to={`/countries/${country.alpha3Code}`}>
+        <Link key={country.numericCode} to={`/${country.alpha3Code}`}>
           <Country
             imgSrc={country.flag}
             name={country.name}

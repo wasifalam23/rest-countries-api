@@ -54,7 +54,7 @@ const CountryDetails = () => {
       {errorMessage && <CountryError message={message} />}
       <div className={styles['details-box']}>
         <div className={styles['btn-box']}>
-          <Link to="/countries">
+          <Link to="/">
             <IoArrowBack className={styles['icon-arrow']} />
             <button className={styles['back-btn']}>Back</button>
           </Link>
